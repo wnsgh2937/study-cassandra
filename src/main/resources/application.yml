@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: study-cassandra
+  cassandra:
+    schema-action: CREATE_IF_NOT_EXISTS #?? ?? Disable ?? ?.
+    request:
+      timeout: 10s
+    connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+    local-datacenter: datacenter1
+    keyspace-name: spring_cassandra
+    contact-points: localhost
+    username: cassandra
+    password: cassandra
+    port: 9042
+
+
